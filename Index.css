@@ -219,7 +219,8 @@
         .section-main-wrapper{
             width: 90%;
             margin: 0 auto;
-            margin-top: 10em;
+            margin-top: 4em;
+            margin-bottom: 10em;
            display: grid;       
                grid-template-columns: repeat(3, 1fr);         
          /* grid-template-columns: repeat(auto-fit, minmax(200px, 3fr)); */
@@ -246,15 +247,15 @@
 
         }
 
-        .section-3-objectives .icon{
+        .section-3-objectives i{
             padding: 10px;
-            border-radius: 55%;
+            border-radius: 50%;
               background-color: #8A2BE2;
               color: white;
 
         }
          .scale-up{
-            font-size:30px;
+            font-size:20px;
             color: white;
             text-align: center;
         }
@@ -290,18 +291,24 @@
           
         }
         .speaker-infos{
-             display: grid;       
-         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+           display: flex;
+           flex-wrap: wrap;
        position: relative;
-         gap: 20px;
+         justify-content: space-between;
          padding-bottom: 30px;
+           margin: 0 auto;
+
                  }
         .speaker-info{
             border: 1px solid gainsboro;
             border-radius: 9px;
             display: flex;
             flex-direction: column;
-            
+           margin-bottom: 1em;
+            align-items: center;
+            gap: 10px;
+            width: 160px;
+            /* height: 250px; */
             padding: 10px;
              background-color: transparent;
              color: white;
@@ -309,6 +316,12 @@
                transition: 0.3s ease-in-out;
                backdrop-filter: blur(10px);
 
+        }
+        .speaker-details{
+            margin-top: 1em;
+        }
+        .speaker-location{
+            font-weight: 700;
         }
         .speakers h2{
             text-align: center;
@@ -338,6 +351,7 @@
             text-align: center;
             font-weight: 700;
         }
+        
                 .speaker-info img{
                     width: 120px;
                     height: 120px;
@@ -359,7 +373,7 @@
                     backdrop-filter: blur(15px);
                      border: 1px solid white;
                     right: 0;
-                    top: 60%;
+                    top: 48%;
                     padding: 3px 7px;
                     color: black;
                     font-size: 10px;
@@ -382,6 +396,7 @@
                     font-size: 30px;        
                     text-align: center;
                     text-transform: uppercase;
+                    margin-top: 10rem;
                 }
                     .sponsors-partners{
                         display: flex;
@@ -426,6 +441,7 @@
                         display: block;
                         background-color: #fcf6f9;
                         padding: 2em;
+                        margin-top: 10rem;
                     }
                 .programme-highlight h2{
                    font-size: 33px;
@@ -451,12 +467,25 @@
                 .morning-session{
                     background-color: rgb(253, 251, 251);
                     display: flex;
-                    justify-content: flex-start;
+                    justify-content:center;
+                    align-items: center;
+                    gap: 10px;
+
                     padding: 2em;
                     color: #333;
                     margin-top: 10px;
                     margin-bottom: 10px;
                     
+                }
+                .morning-session i{
+                    background-color: #522180;
+                    color: whitesmoke;
+                    padding: 10px;
+                    border-radius: 50%;
+                    font-size: 20px;
+                }
+                .morning-session i:nth-child(2){
+                    background-color: #fb4ea5;
                 }
                 .session-details{
                     display: flex;
