@@ -1040,7 +1040,6 @@
 
 /* ===================== FOOTER OVERRIDE ===================== */
 .expo-body .footer {
-    background-color: #07070e;
     border-top: 1px solid var(--expo-border);
 }
 
