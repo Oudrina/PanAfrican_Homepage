@@ -28,17 +28,16 @@
         <div class="navlist">
             <a href="Homepage.html">Home</a>
             <a href="AboutUs.html">About Us</a>
-            <a href="Programmes.html">Programmes</a>
+            <a href="#programmes">Programmes</a>
             <a href="Speakers.html">Speakers</a>
             <a href="Partners.html">Partners & Sponsors</a>
             <a href="Expo.html">Expo / Exhibition</a>
         </div>
 
         <div class="navbar-register">
-            <button type="button" class="register-button">
-                <a href="/">Register Now</a>
-
-            </button>
+            <a href="/" class="register-button" style="text-decoration: none;">
+                Register Now
+            </a>
         </div>
     </nav>
     <!-- Hero Section -->
@@ -386,7 +385,7 @@
 
 
         </div>
-        <button class="view-more-button">View More</button>
+        <a href="Speakers.html" class="view-more-button" style="text-decoration:none; display:inline-block;">View More</a>
 
 
     </div>
@@ -461,7 +460,7 @@
 
     </div>
 
-    <div class="programme-highlight">
+    <div class="programme-highlight" id="programmes">
         <h2>Programme Highlight</h2>
         <p>A DETAILED PROGRAMME WILL BE UPDATED IN DUE COURSE
         </p>
@@ -664,35 +663,7 @@
         </div>
     </footer>
 
-    <script>
-        // Countdown Logic
-        const countdown = () => {
-            const countDate = new Date("September 22, 2026 00:00:00").getTime();
-            const now = new Date().getTime();
-            const gap = countDate - now;
-
-            // Time calculations
-            const second = 1000;
-            const minute = second * 60;
-            const hour = minute * 60;
-            const day = hour * 24;
-
-            // Calculate totals
-            const textDay = Math.floor(gap / day);
-            const textHour = Math.floor((gap % day) / hour);
-            const textMinute = Math.floor((gap % hour) / minute);
-            const textSecond = Math.floor((gap % minute) / second);
-
-            // Update HTML
-            document.getElementById("days").innerText = textDay;
-            document.getElementById("hrs").innerText = textHour < 10 ? "0" + textHour : textHour;
-            document.getElementById("mins").innerText = textMinute < 10 ? "0" + textMinute : textMinute;
-            document.getElementById("sec").innerText = textSecond < 10 ? "0" + textSecond : textSecond;
-        };
-
-        setInterval(countdown, 1000);
-        countdown(); // Run immediately on load
-    </script>
+    <script src="Script.js"></script>
 </body>
 
 </html>

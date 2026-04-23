@@ -1,0 +1,428 @@
+/* ===================================================================
+   PARTNERS & SPONSORS - Dedicated Stylesheet
+   =================================================================== */
+
+body.partners-body {
+    background-color: #ffffff;
+    color: #0f172a;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ===================== HERO SECTION ===================== */
+.partners-hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    padding: 100px 5%;
+    background-color: #01031c;
+}
+
+.partners-hero-bg {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 0;
+}
+
+.partners-hero-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.3) saturate(0.8);
+}
+
+.partners-hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(15,23,42,0.6) 0%, rgba(1,3,28,0.95) 100%);
+    z-index: 1;
+}
+
+.partners-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+.partners-hero-content h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.partners-hero-content h1 span {
+    color: #fb4ea5; /* Magenta */
+}
+
+.partners-hero-content p {
+    font-size: 1.1rem;
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 40px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #522180; /* PanAfrican purple */
+    color: #ffffff;
+    padding: 16px 36px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #fb4ea5;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(251, 78, 165, 0.3);
+}
+
+/* ===================== PARTNERS GRID SECTIONS ===================== */
+.partners-section {
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.bg-cream {
+    background-color: #fcfaf6; /* Light cream */
+}
+
+.bg-lavender {
+    background-color: #f7f5fb; /* Very soft lavender/purple */
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: #1e1b4b; /* Deep Indigo */
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.subsection-title {
+    font-size: 1.2rem;
+    color: #64748b;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.logos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Placeholder box for logos */
+.logo-box {
+    width: 180px;
+    height: 80px;
+    background-color: #ffffff;
+    /* border: 1px dashed #cbd5e1; */
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #94a3b8;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.logo-box img {
+    max-width: 70%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.bg-white .logo-box {
+    background-color: #f8fafc;
+}
+
+.logo-box:hover {
+    border-color: #3b82f6;
+    color: #3b82f6;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+}
+
+/* ===================== WHY BECOME A SPONSOR ===================== */
+.why-sponsor-section {
+    background-color: #01031c;
+    color: #ffffff;
+    padding: 100px 5%;
+    position: relative;
+    overflow: hidden;
+    background-image: 
+        radial-gradient(circle at 10% 20%, rgba(59, 130, 246, 0.05) 0%, transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(251, 78, 165, 0.05) 0%, transparent 40%);
+}
+
+.why-sponsor-section::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,0.01) 10px, rgba(255,255,255,0.01) 20px);
+    z-index: 0;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.why-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.why-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.why-header .subtitle {
+    margin: 0 auto;
+}
+
+.subtitle {
+    color: rgba(255,255,255,0.7);
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 700px;
+}
+
+.reasons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.reason-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 35px 30px;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.reason-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-5px);
+    border-color: rgba(217, 70, 239, 0.3); /* magenta edge */
+}
+
+.reason-card i {
+    color: #e879f9; /* Soft Magenta */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.reason-card h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.reason-card p {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.6;
+}
+
+/* ===================== REGISTRATION FORM SECTION ===================== */
+.sponsor-register-section {
+    background-color: #010214;
+    color: #ffffff;
+    padding: 100px 5%;
+    border-top: 1px solid rgba(255,255,255,0.05); /* very subtle dark separation */
+}
+
+.registration-centered-card {
+    max-width: 850px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 24px;
+    padding: 60px;
+}
+
+.registration-header-center {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.registration-header-center h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.registration-header-center p {
+    color: rgba(255,255,255,0.6);
+    font-size: 1rem;
+    margin: 0 auto;
+    max-width: 500px;
+    line-height: 1.6;
+}
+
+.centered-form {
+    margin-top: 20px;
+}
+
+.form-submit-center {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.sponsor-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group.full-width {
+    flex: 1 1 100%;
+}
+
+.form-group label {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 14px 16px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.form-group select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+.form-group select option {
+    background-color: #01031c;
+    color: #ffffff;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-submit {
+    align-self: flex-start;
+    margin-top: 10px;
+    padding: 14px 32px;
+    background-color: #ffffff;
+    color: #0f172a;
+    border: none;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.15);
+}
+
+/* ===================== RESPONSIVE DESIGN ===================== */
+@media screen and (max-width: 850px) {
+    .registration-centered-card {
+        padding: 40px 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .partners-hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .form-row {
+        flex-direction: column;
+    }
+    
+    .logo-box {
+        width: 140px;
+        height: 60px;
+    }
+
+    .reasons-grid {
+        grid-template-columns: 1fr;
+    }
+}

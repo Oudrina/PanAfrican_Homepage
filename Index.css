@@ -22,6 +22,15 @@
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.dark-theme {
+    --bg-white: #0a0a0c;
+    --bg-light: #151518;
+    --text-dark: #f0f0f0;
+    --text-light: #b0b0b0;
+    --glass-bg: rgba(0, 0, 0, 0.4);
+    --glass-border: rgba(255, 255, 255, 0.1);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -30,9 +39,12 @@
 
 }
 
-html, body {
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE/Edge */
+html,
+body {
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE/Edge */
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
@@ -134,6 +146,36 @@ body {
 .navlist a:hover {
     color: var(--primary-pink);
     opacity: 1;
+}
+.navbar-register a{
+    color: var(--text-white);
+}
+
+.theme-toggle-btn {
+    background: none;
+    border: none;
+    color: var(--text-white);
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-smooth);
+    padding: 5px;
+    margin: 0 10px;
+}
+
+.theme-toggle-btn:hover {
+    color: var(--primary-pink);
+    transform: rotate(15deg) scale(1.1);
+}
+
+.dark-theme .theme-toggle-btn {
+    color: var(--text-dark);
+}
+
+.dark-theme .navbar-header-container .navlist a {
+    color: var(--text-dark);
 }
 
 
@@ -895,14 +937,11 @@ body {
     display: none;
 }
 
-/* Green Chevron Style */
 .faq-item summary::after {
     content: '\ea4a';
-    /* Boxicon chevron-down icon code */
     font-family: 'boxicons' !important;
     font-size: 24px;
     color: var();
-    /* Bright green as in image */
     transition: transform 0.4s ease;
 }
 
@@ -1064,19 +1103,24 @@ body {
     }
 
     .speaker-infos {
-        grid-template-columns: repeat(2, 1fr); /* 2 in a row as requested */
-        gap: 15px; /* Decreased gap to fit */
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 in a row as requested */
+        gap: 15px;
+        /* Decreased gap to fit */
         width: 95%;
     }
 
     .speaker-info {
-        max-width: 100%; /* Fill the column space */
-        padding: 40px 10px; /* Increased vertical padding to increase height */
+        max-width: 100%;
+        /* Fill the column space */
+        padding: 40px 10px;
+        /* Increased vertical padding to increase height */
         border-radius: 12px;
     }
 
     .speaker-info img {
-        width: 110px; /* Decreased image size to fit 2 per row */
+        width: 110px;
+        /* Decreased image size to fit 2 per row */
         height: 110px;
     }
 
